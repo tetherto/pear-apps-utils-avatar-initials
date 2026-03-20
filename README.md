@@ -5,6 +5,7 @@ A simple utility to generate initials for an avatar.
 ## Table of Contents
 
 - [Features](#features)
+- [Security Notice](#security-notice)
 - [Installation](#installation)
 - [Usage Examples](#usage-examples)
 - [Dependencies](#dependencies)
@@ -18,16 +19,21 @@ A simple utility to generate initials for an avatar.
 - Properly handles edge cases like null, undefined, or empty strings
 - Consistently returns uppercase initials
 
+## Security Notice
+
+1. To ensure the security and integrity of your projects, please note that official PearPass packages are distributed exclusively through our GitHub organization.
+2. Any packages with similar names found on the npm registry or other third-party package managers are not affiliated with PearPass and should be strictly avoided. We recommend installing directly from this repository to ensure you are using the verified, open-source version.
+
 ## Installation
 
 ```bash
-npm install pear-apps-utils-avatar-initials
+npm install git+https://github.com/tetherto/pear-apps-utils-avatar-initials.git
 ```
 
 ## Usage Examples
 
 ```javascript
-import { generateAvatarInitials } from 'pear-apps-utils-avatar-initials';
+import { generateAvatarInitials } from '@tetherto/pear-apps-utils-avatar-initials';
 
 // Single name
 generateAvatarInitials('John'); // Returns 'JO'
@@ -46,17 +52,11 @@ generateAvatarInitials(undefined); // Returns ''
 
 This package has no external dependencies, making it lightweight and easy to include in any project.
 
-## Depended Submodules
-
-The following sibling submodules must be present in the workspace (they are not declared as npm dependencies):
-
-- [`tether-dev-docs`](../tether-dev-docs)
-
 ## Related Projects
 
-- [pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
-- [pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password
-- [tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
+- [@tetherto/pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
+- [@tetherto/pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password
+- [@tetherto/tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
 
 ## License
 
